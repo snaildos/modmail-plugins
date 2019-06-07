@@ -1,11 +1,15 @@
 import re
 from discord.ext import commands
 
-def __init__(self, bot):  # in the class init
-    self.coll = bot.plugin_db.get_partition(self)
+class snaildos(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+        self.db = bot.plugin_db.get_partition(self)
 
-class Github(commands.Cog):
-
+  @commands.command()
+    async def say(self, ctx, *, message: commands.clean_content):
+        """Repeats after you"""
+        await ctx.send(message)
 
     @commands.Cog.listener()
     async def on_message(self, message):
