@@ -1,7 +1,6 @@
 import re
 from discord.ext import commands
 
-
 class Github(commands.Cog):
 
 
@@ -11,6 +10,7 @@ class Github(commands.Cog):
         if match:
             issue_num = match.group(1)
             await message.channel.send(f'https://github.com/snaildos/modmail-plugins/issues/{issue_num}')
+
 
 def setup(bot):
     bot.add_cog(Github())
