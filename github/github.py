@@ -6,10 +6,6 @@ class snaildos(commands.Cog):
         self.bot = bot
         self.db = bot.plugin_db.get_partition(self)
 
-  @commands.command()
-    async def say(self, ctx, *, message: commands.clean_content):
-        """Repeats after you"""
-        await ctx.send(message)
 
     @commands.Cog.listener()
     async def on_message(self, message):
