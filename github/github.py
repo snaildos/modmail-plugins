@@ -16,6 +16,10 @@ class Github(commands.Cog):
         if match:
             issue_num = match.group(1)
             await message.channel.send(f'https://github.com/snaildos/SnailDOS-Hard-Disk-Repair/issues/{issue_num}')
+       match = re.match(r'red)', message.content)
+        if match:
+            issue_num = match.group(1)
+            await message.channel.send(f'red')
 
 
 def setup(bot):
