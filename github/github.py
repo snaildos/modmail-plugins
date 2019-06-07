@@ -11,10 +11,7 @@ class Github(commands.Cog):
         if match:
             issue_num = match.group(1)
             await message.channel.send(f'https://github.com/snaildos/modmail-plugins/issues/{issue_num}')
-
-
-    @commands.Cog.listener()
-    async def on_message(self, message):
+            return
         match = re.match(r'harddisk#(\d+)', message.content)
         if match:
             issue_num = match.group(1)
