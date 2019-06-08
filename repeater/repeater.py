@@ -1,7 +1,7 @@
 import re
 from discord.ext import commands
 
-def emoji):
+def emoji:
     base = 0x1F1E6
 
 
