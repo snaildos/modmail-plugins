@@ -1,5 +1,5 @@
-import re
 from discord.ext import commands
+import asyncio
 
 
 class Repeater(commands.Cog):
