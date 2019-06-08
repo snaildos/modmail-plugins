@@ -12,8 +12,8 @@ class Repeater(commands.Cog):
     @commands.command()
     async def say(self, ctx, *, message: commands.clean_content):
         """Copys what you say"""
-        actual_poll = await ctx.send(message)
-        await actual_poll.add_reaction(to_emoji)
+        send = await ctx.send(message)
+        await send.add_reaction(to_emoji(c))
 
 
 def setup(bot):
