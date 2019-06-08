@@ -6,7 +6,7 @@ class Repeater(commands.Cog):
 
 
    @commands.command()
-    async def say(self, ctx, *, message: commands.clean_content):
+     async def say(self, ctx, *, message: commands.clean_content):
         """Follows what you say!!!"""
         await ctx.send(message)
 
