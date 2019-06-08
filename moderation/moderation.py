@@ -1,5 +1,6 @@
 import re
 from core import checks
+from core.models import PermissionLevel
 from discord.ext import commands
 
 
