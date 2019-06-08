@@ -13,7 +13,7 @@ class Repeater(commands.Cog):
     async def say(self, ctx, *, message: commands.clean_content):
         """Copys what you say"""
         actual_poll = await ctx.send(message)
-           await actual_poll.add_reaction(emoji)
+          await actual_poll.add_reaction(emoji)
 
 
 def setup(bot):
