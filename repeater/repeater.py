@@ -1,5 +1,5 @@
 import discord
-from discord.ext import com
+from discord.ext import commands
 
 @commands.command()
 async def say(self, ctx, *, message: commands.clean_content):
