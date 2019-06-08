@@ -12,4 +12,4 @@ class Repeater(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(Github())
+    bot.add_cog(Repeater())
