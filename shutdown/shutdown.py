@@ -31,7 +31,7 @@ class Reboot(commands.Cog):
         logger.info("==== Shutting down bot ====")
         await msg.edit(embed=discord.Embed(
             color=discord.Color.blurple(),
-            description="`✅ | Cleared Debug Cache.. `\n\n`✅ | Turning off....`\n\n`|Sucessful shutdown`"
+            description="`✅ | Cleared Debug Cache.. `\n\n`✅ | Turning off....`\n\n`| Sucessful shutdown`"
         ))
         await self.bot.logout()
 
