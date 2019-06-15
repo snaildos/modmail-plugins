@@ -26,12 +26,12 @@ class Reboot(commands.Cog):
         await ctx.invoke(self.bot.get_command('debug clear'))
         emsg = await msg.edit(embed=discord.Embed(
             color=discord.Color.blurple(),
-            description="✅ Logging out..."
+            description="Clearing Debug Cache..."
         ))
         logger.info("==== Shutting down bot ====")
         await msg.edit(embed=discord.Embed(
             color=discord.Color.blurple(),
-            description="`✅ | Cleared Debug Cache.. `\n\n`✅ | Turning off....`"
+            description="Cleared Debug Cache! \n \n Sucessful Shutdown!"
         ))
         await self.bot.logout()
 
