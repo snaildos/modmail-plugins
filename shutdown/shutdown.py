@@ -16,7 +16,7 @@ class Reboot(commands.Cog):
 
     @commands.command()
     @checks.has_permissions(PermissionLevel.OWNER)
-    async def reboot(self, ctx):
+    async def shutdown(self, ctx):
         """Shutdown the bot"""
         msg = await ctx.send(embed=discord.Embed(
             color=discord.Color.blurple(),
