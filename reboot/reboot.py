@@ -19,14 +19,14 @@ class Reboot(commands.Cog):
     async def reboot(self, ctx):
         """Disconnects the bot and reboots"""
         msg = await ctx.send(embed=discord.Embed(
-            color=discord.Color.yellow(),
+            color=discord.Color.blurple(),
             description="Loading...."
         ))
 
         await ctx.invoke(self.bot.get_command('debug clear'))
         emsg = await msg.edit(embed=discord.Embed(
             color=discord.Color.blurple(),
-            description="✅ Cleared Cached Logs"
+            description="✅ Logging out..."
         ))
         logger.info("==== Rebooting Bot ====")
         await msg.edit(embed=discord.Embed(
