@@ -17,10 +17,10 @@ class Reboot(commands.Cog):
     @commands.command()
     @checks.has_permissions(PermissionLevel.OWNER)
     async def reboot(self, ctx):
-        """Disconnects the bot and reboots"""
+        """Shutdown the bot"""
         msg = await ctx.send(embed=discord.Embed(
             color=discord.Color.blurple(),
-            description="Loading...."
+            description="Winding down...."
         ))
 
         await ctx.invoke(self.bot.get_command('debug clear'))
@@ -28,12 +28,12 @@ class Reboot(commands.Cog):
             color=discord.Color.blurple(),
             description="✅ Logging out..."
         ))
-        logger.info("==== Rebooting Bot ====")
+        logger.info("==== Shutting down bot ====")
         await msg.edit(embed=discord.Embed(
             color=discord.Color.blurple(),
-            description="`✅ | Ready to disconnect and reboot... `\n\n`✅ | Rebooting....`"
+            description="`✅ | Cleared Debug Cache.. `\n\n`✅ | Turning off....`"
         ))
-        await self.bot.run ()
+        await self.bot.logout()
 
 def setup(bot):
     bot.add_cog(Reboot(bot))
