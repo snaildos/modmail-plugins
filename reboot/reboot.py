@@ -33,8 +33,7 @@ class Reboot(commands.Cog):
             color=discord.Color.blurple(),
             description="`✅ | Ready to disconnect and reboot... `\n\n`✅ | Rebooting....`"
         ))
-        await self.bot.close()
-
+        await self.bot.logout()
 
 def setup(bot):
     bot.add_cog(Reboot(bot))
