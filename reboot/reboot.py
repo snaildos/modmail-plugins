@@ -1,4 +1,4 @@
-import sys
+﻿import sys
 import os
 import discord
 import logging
@@ -33,7 +33,7 @@ class Reboot(commands.Cog):
             color=discord.Color.blurple(),
             description="`✅ | Ready to disconnect and reboot... `\n\n`✅ | Rebooting....`"
         ))
-        await self.bot.logout()
+        await self.bot.run ()
 
 def setup(bot):
     bot.add_cog(Reboot(bot))
