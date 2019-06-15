@@ -33,7 +33,6 @@ class Reboot(commands.Cog):
             color=discord.Color.blurple(),
             description="`✅ | Ready to disconnect and reboot... `\n\n`✅ | Rebooting....`"
         ))
-        os.execl(sys.executable, sys.executable, * sys.argv)
         await self.bot.close()
 
 
