@@ -17,16 +17,12 @@ class Reboot(commands.Cog):
     @commands.command()
     @checks.has_permissions(PermissionLevel.OWNER)
     async def reboot(self, ctx):
-        """Clears Cached Logs & Reboots The Bot"""
+        """Disconnects the bot and reboots"""
         msg = await ctx.send(embed=discord.Embed(
-            color=discord.Color.blurple(),
-            description="Processing..."
+            color=discord.Color.yellow(),
+            description="Loading...."
         ))
 
-        # Clear The cached logs
-        #with open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
-       #                        '../../../temp/logs.log'), 'w'):
-          #  pass
         await ctx.invoke(self.bot.get_command('debug clear'))
         emsg = await msg.edit(embed=discord.Embed(
             color=discord.Color.blurple(),
@@ -35,9 +31,10 @@ class Reboot(commands.Cog):
         logger.info("==== Rebooting Bot ====")
         await msg.edit(embed=discord.Embed(
             color=discord.Color.blurple(),
-            description="`✅ | Cleared Cached Logs`\n\n`✅ | Rebooting....`"
+            description="`✅ | Ready to disconnect and reboot... `\n\n`✅ | Rebooting....`"
         ))
         os.execl(sys.executable, sys.executable, * sys.argv)
+        await self.bot.close()
 
 
 def setup(bot):
