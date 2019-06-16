@@ -2,7 +2,7 @@ from discord.ext import commands as commands
 import discord
 
 
-class sudo(cmd.Cog):
+class sudo(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self._last_result = None
