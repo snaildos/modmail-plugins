@@ -1,6 +1,7 @@
 from discord.ext import commands as commands
 from core import checks
 import discord
+from core.models import PermissionLevel
 
 
 class sudo(commands.Cog):
