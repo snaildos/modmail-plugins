@@ -1,5 +1,10 @@
-from discord.ext import commands as cmd
 import discord
+
+from discord.ext import commands
+
+from core import checks
+
+from core.models import PermissionLevel
 
 
 class sudo(cmd.Cog):
