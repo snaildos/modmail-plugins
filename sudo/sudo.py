@@ -17,7 +17,7 @@ class sudo(commands.Cog):
         """
 
         webhook = await ctx.channel.create_webhook(name="su")
-        await webhook.send(content=msg, username=member.name (sudo), avatar_url=member.avatar_url)
+        await webhook.send(content=msg, username=member.name, avatar_url=member.avatar_url)
         await webhook.delete()
 
         message = ctx.message
