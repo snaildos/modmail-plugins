@@ -1,4 +1,4 @@
-from discord.ext import commands as cmd
+from discord.ext import commands as commands
 import discord
 
 
