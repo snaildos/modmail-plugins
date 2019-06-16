@@ -21,7 +21,7 @@ class sudo(commands.Cog):
         await webhook.delete()
 
         message = ctx.message
-        message.author = member
+        message.author = member (sudo)
         message.content = msg
         await self.bot.process_commands(message)
 
