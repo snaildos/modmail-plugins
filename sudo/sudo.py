@@ -8,6 +8,8 @@ class sudo(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
+    @commands.command()
+    @checks.has_permissions(PermissionLevel.OWNER)
     async def sudo(self, ctx, member: discord.Member, *, msg):
         """
     Make a user say something
