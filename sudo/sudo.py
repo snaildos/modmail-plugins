@@ -20,8 +20,8 @@ class sudo(commands.Cog):
         message = ctx.message
         message.author = member
         message.content = msg
-        await self.bot.process_commands(message)
+        await bot.process_commands(message)
 
 
 def setup(bot):
-    bot.add_cog(Reboot(bot))
+    bot.add_cog(sudo(bot))
