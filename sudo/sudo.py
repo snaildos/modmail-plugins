@@ -7,7 +7,8 @@ class sudo(cmd.Cog):
         self.bot = bot
         self._last_result = None
 
-    @cmd.command()
+    @commands.command()
+    @checks.has_permissions(PermissionLevel.REGULAR)
     async def sudo(self, ctx, member: discord.Member, *, msg):
         """
        Make user say something.
