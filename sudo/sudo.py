@@ -10,7 +10,7 @@ class sudo(commands.Cog):
 
     @commands.command()
     @checks.has_permissions(PermissionLevel.OWNER)
-    async def sudo(self, ctx, member: discord.Member, *, msg):
+    @async def sudo(self, ctx, member: discord.Member, *, msg):
         """
     Make a user say something
         """
