@@ -1,8 +1,6 @@
 # modmail-plugins
 
-
-More plugins comming soon
-Current:
+Current avalible plugins"
 
 Sudo
 Shutdown
