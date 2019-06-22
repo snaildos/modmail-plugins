@@ -13,7 +13,7 @@ class sudo(commands.Cog):
     @checks.has_permissions(PermissionLevel.ADMINISTRATOR)
     async def sudo(self, ctx, member: discord.Member, *, msg):
         """
-       Make user say something.
+       Make webhooks to act like making a user say something.
         """
 
         webhook = await ctx.channel.create_webhook(name="su")
