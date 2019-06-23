@@ -28,8 +28,7 @@
 
 ## Prerequisites
 
-- npm &gt;=5.5.0
-- node &gt;=9.3.0
+- Modmail bot
 
 ## Install
 
