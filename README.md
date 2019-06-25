@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to SnailDOS© ModMail-Plugins 👋</h1>
+﻿<h1 align="center">Welcome to SnailDOS© ModMail-Plugins 👋</h1>
 <p>
   <img src="https://img.shields.io/badge/version-0.4.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/snaildos/modmail-plugins">
@@ -21,6 +21,12 @@
 • Repeater
 • Shutdown
 • Github
+
+
+------ Ported ------
+
+• Osu (Still under construction, don't try yet!)
+•
 
 ### 🏠 [Homepage](https://github.com/snaildos/modmail-plugins#readme)
 
