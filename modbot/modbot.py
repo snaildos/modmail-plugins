@@ -16,8 +16,8 @@ class sudo(commands.Cog):
        Make modbot say somthing.
         """
 
-        webhook = await ctx.channel.create_webhook(name="su")
-        await webhook.send(content=msg, avatar_url="https://darksidemc.ga/img/core-img/logo.png")
+        webhook = await ctx.channel.create_webhook(name="DarkSide-ModBot")
+        await webhook.send(content=msg, avatar_url="https://cdn.discordapp.com/avatars/591556661018099732/ff09e0cdc176fdd9ea33bafca4a097fc.png?size=128")
         await webhook.delete()
 
         message = ctx.message
