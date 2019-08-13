@@ -17,7 +17,7 @@ class sudo(commands.Cog):
         """
 
         webhook = await ctx.channel.create_webhook(name="su")
-        await webhook.send(content=msg, username=DarkSideModbot, avatar_url="https://darksidemc.ga/img/core-img/logo.png"
+        await webhook.send(content=msg, username=DarkSideModbot, avatar_url="https://darksidemc.ga/img/core-img/logo.png")
         await webhook.delete()
 
         message = ctx.message
