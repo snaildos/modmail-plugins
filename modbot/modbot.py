@@ -11,7 +11,7 @@ class sudo(commands.Cog):
 
     @commands.command()
     @checks.has_permissions(PermissionLevel.ADMINISTRATOR)
-    async def modbot(self, ctx, member: discord.Member, *, msg):
+    async def modbot(self, ctx, *, msg):
         """
        Make modbot say somthing.
         """
