@@ -50,7 +50,7 @@ Use the modmail ?plugin install snaildos/modmail-plugins/PLUGINNAME
 
 ## Author
 
-👤 **Zara Soonich, SnailDOS© TEAM**
+👤 **SnailDOS TEAM**
 
 * Github: [@snaildos](https://github.com/snaildos)
 
@@ -64,7 +64,7 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2019 [Zara Soonich, SnailDOS© TEAM](https://github.com/snaildos).<br />
+Copyright © 2019 [SnailDOS TEAM](https://github.com/snaildos).<br />
 This project is [GNU](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE) licensed.
 
 ***
