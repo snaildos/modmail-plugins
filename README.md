@@ -1,4 +1,6 @@
-﻿<h1 align="center">Welcome to SnailDOS ModMail-Plugins 👋</h1>
+![SnailDOS's github stats](https://github-readme-stats.vercel.app/api?username=SnailDOS&count_private=true&show_icons=true&theme=dracula)
+<p>
+ <h1 align="center">Welcome to SnailDOS ModMail-Plugins 👋</h1>
 <p>
   <img src="https://img.shields.io/badge/version-0.4.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/snaildos/modmail-plugins">
@@ -25,8 +27,8 @@
 
 ------ Ported ------
 
-• Osu (Still under construction, don't try yet!)
-•
+• Osu (Non functionaing)
+
 
 ### 🏠 [Homepage](https://github.com/snaildos/modmail-plugins#readme)
 
@@ -64,7 +66,6 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2019 [SnailDOS TEAM](https://github.com/snaildos).<br />
 This project is [GNU](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE) licensed.
 
 ***
