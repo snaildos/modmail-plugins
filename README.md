@@ -66,6 +66,6 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-This project is [GNU](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE) licensed.
+This project is GNU licensed.
 
 ***
