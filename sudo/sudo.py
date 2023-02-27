@@ -25,4 +25,4 @@ class sudo(commands.Cog):
         await self.bot.process_commands(message)
 
     async def setup(bot):
-        bot.add_cog(sudo(bot))
+        await bot.add_cog(sudo(bot))
