@@ -32,7 +32,7 @@ class shutdown(commands.Cog):
             color=discord.Color.blurple(),
             description="Cleared Debug Cache! \n \n Sucessful Shutdown!"
         ))
-        await self.bot.logout()
+        await self.bot.close()
 
 async def setup(bot):
     await bot.add_cog(shutdown(bot))
