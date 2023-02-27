@@ -14,7 +14,7 @@ class Github(commands.Cog):
         match = re.match(r'harddisk#(\d+)', message.content)
         if match:
             issue_num = match.group(1)
-            await message.channel.send(f'https://github.com/snaildos/SnailDOS-Hard-Disk-Repair/issues/{issue_num}')
+            await message.channel.send(f'gone')
 
 
 async def setup(bot):
