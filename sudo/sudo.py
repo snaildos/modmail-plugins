@@ -16,7 +16,7 @@ class sudo(commands.Cog):
     async def sudo(self, ctx, member: discord.Member, *, msg):
 
         webhook = await ctx.channel.create_webhook(name="sudo")
-        await webhook.send(content=msg, username=member.name, avatar=member.display_avatar)
+        await webhook.send(content=msg, username=member.name, avatar_url=member.display_avatar)
         await webhook.delete()
 
         message = ctx.message
