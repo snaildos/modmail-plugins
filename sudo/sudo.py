@@ -11,7 +11,7 @@ class sudo(commands.Cog):
         self.bot = bot
         self._last_result = None
 
-    @commands.Cog.listener()
+    @commands.commands()
     @checks.has_permissions(PermissionLevel.ADMIN)
     async def sudo(self, ctx, member: discord.Member, *, msg):
 
