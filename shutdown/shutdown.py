@@ -34,5 +34,5 @@ class shutdown(commands.Cog):
         ))
         await self.bot.logout()
 
-def setup(bot):
-    bot.add_cog(shutdown(bot))
+async def setup(bot):
+    await bot.add_cog(shutdown(bot))

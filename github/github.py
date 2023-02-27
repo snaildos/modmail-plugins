@@ -4,7 +4,6 @@ from discord.ext import commands
 
 class Github(commands.Cog):
 
-
     @commands.Cog.listener()
     async def on_message(self, message):
         match = re.match(r'plugins#(\d+)', message.content)
@@ -18,5 +17,5 @@ class Github(commands.Cog):
             await message.channel.send(f'https://github.com/snaildos/SnailDOS-Hard-Disk-Repair/issues/{issue_num}')
 
 
-def setup(bot):
-    bot.add_cog(Github())
+async def setup(bot):
+    await bot.add_cog(github(bot))
